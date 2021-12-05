@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Perguntas</title>
+</head>
+<body>
+    <nav>
+        <a href="/"><img src="/img/gitlab-logo-1-color-black-rgb.png" alt="Logo do site" height="55px" style="margin-left: 20px;"></a>
+        <a href="/perguntar"><button>Perguntar</button></a>
+    </nav> 
+
+    <div class="container">
+        <h1>Perguntas</h1>
+
+        <% perguntas.forEach(pergunta => { %>
+            <div class="pergunta">
+                <a href="/pergunta/<%= pergunta.id %> "> 
+                    <h3> <%= pergunta.titulo %>  </h3>
+                </a>
+                <p class="descricao"> <%= pergunta.descricao %>  </p>
+            </div>
+        <% }) %>
+
+    </div>
+</body>
+</html>

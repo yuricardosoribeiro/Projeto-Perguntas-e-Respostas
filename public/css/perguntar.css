@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(224, 224, 224);
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    margin-left: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    padding: 7px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: 1px solid rgb(165, 164, 164);
+    border-radius: 2px;
+}
+
+input:focus, textarea:focus {
+    border: 1px solid rgb(71, 71, 71);
+    outline: 0;
+    box-shadow: 0 0 0 0;
+}
+
+textarea {
+    resize: none;
+    height: 150px;
+}
+
+label, button {
+    margin-left: 5px;
+    margin-top: 7px;
+    margin-bottom: 3px;
+}
+
+button {
+    align-self: flex-start;
+    padding: 7px;
+    color: #FFF;
+    background-color: rgb(81, 81, 253);
+    border: 1px solid rgb(50, 50, 255);
+    border-radius: 2px;
+}
+
+button:hover {
+    background-color: rgb(109, 109, 255);
+    cursor: pointer;
+}
+
+.container {
+    margin-top: 60px;
+    width: 600px;
+    background-color: #FFF;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+nav {
+    height: 40px;
+    background-color: rgb(88, 88, 255);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+}
+
+button:disabled {
+    background-color: gray;
+    border: 1px solid rgb(92, 92, 92);
+    cursor: auto;
+}
+
+
+@media only screen and (max-width: 425px) {
+    .container {
+        width: 90%;
+        
+    }
+}
